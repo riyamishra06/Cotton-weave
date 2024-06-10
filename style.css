@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 0px 50px;
+  padding-top: 150px;
+  gap: 70px;
+}
+
+#left {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+#left h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 8vw;
+  line-height: 9vw;
+}
+
+#bottom-left {
+  height: 40%;
+  width: 100%;
+}
+
+#color {
+  width: fit-content;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: 1px solid black;
+  margin: 3px;
+}
+
+#color h5 {
+  font-size: 20px;
+  padding: 0 5px;
+}
+
+#color1, #color2 {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+#color1 {
+  background-color: burlywood;
+}
+
+#color2 {
+  background-color: brown;
+}
+
+#left h2 {
+  margin-top: 50px;
+  font-size: 2vw;
+  margin-bottom: 10px;
+}
+
+#left p {
+  font-size: 1.2vw;
+  color: #444;
+  line-height: 2vw;
+  width: 65%;
+}
+
+#right {
+  height: 90%;
+  width: 38%;
+  position: relative;
+  padding-right: 20px;
+}
+
+#right img {
+  width: 100%;
+  height: 88%;
+  object-fit: cover;
+}
+
+#right-top {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#right-top h4 {
+  font-size: 30px;
+  font-weight: 300;
+  font-family: "Work Sans", sans-serif;
+}
+
+#right-top h5 {
+  font-size: 16px;
+}
+
+#gola {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(11, 8, 24);
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: -8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20%;
+}
+
+#gola h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#roated {
+  position: absolute;
+  left: -10%;
+  bottom: 4%;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  #main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 40px;
+  }
+
+  #left {
+    height: 50%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+
+  #left h1 {
+    font-family: "Work Sans", sans-serif;
+    font-size: 18vw;
+    line-height: 19vw;
+  }
+
+  #bottom-left {
+    height: 40%;
+    width: 100%;
+  }
+
+  #color {
+    width: fit-content;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin: 3px;
+  }
+
+  #color h5 {
+    font-size: 13px;
+    padding: 0 5px;
+    margin: 5px;
+  }
+
+  #color1, #color2 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  }
+
+  #left h2 {
+    margin-top: 50px;
+    font-size: 6vw;
+    margin-bottom: 10px;
+  }
+
+  #left p {
+    font-size: 3vw;
+    color: #444;
+    line-height: 4vw;
+    width: 65%;
+  }
+
+  #right {
+    height: 20vh;
+    width: fit-content;
+    position: relative;
+    padding-right: 20px;
+    /* background-color: pink; */
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #right img {
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+  }
+
+  #right-top {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #right-top h4 {
+    font-size: 30px;
+    font-weight: 300;
+    font-family: "Work Sans", sans-serif;
+  }
+
+  #right-top h5 {
+    font-size: 15px;
+  }
+
+  #gola {
+    height: 25vh;
+    width: 30vw;
+    background-color: rgb(11, 8, 24);
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: -8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20%;
+  }
+
+  #gola h5 {
+    font-size: 3vh;
+    font-weight: 500;
+  }
+
+  #roated {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
